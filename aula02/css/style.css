@@ -1,0 +1,91 @@
+/* 
+Aula 02 - Css para Cartão produto 
+
+TOPICOS ABORDADO:
+
+!. Flexbox (centralizando os elementos)
+@. Box Shadowns (sombras para profundidade)
+3. Border- radius (bordas arrendondadas)
+4. Hover effects (Interatividade)
+5.Responsividade design
+6.Transição CSS ( smoth animations)
+*/
+
+/* EStilos Globais
+ */
+
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;     
+ }
+
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    padding: 20px; 
+    display: flex;/*Permite usar propriedades de centralizar*/
+    justify-content: center; /*Centralizar verticalmente*/
+    align-items: center;/* Centraliza verticalmente*/
+    min-height: 100vh;
+ }
+
+ .container {
+        /* O container é o Paido pai do .procut-card
+        Herda o flexbox do bory, pode sus propriedades */
+        width: 100;
+ }
+ /* Cartão do Produto */
+ .product-card {
+    background-color: #ffff;
+    width: 100; /* ocupa 100% da largura maxima no mobile*/
+    max-width: 320px; /* largura maxima no mobile ( aredondadas para o desing*/
+    border-radius: 15px; /* Bordas aredondas para design*/
+    overflow: hidden;/*Garante que o conteudo não ultrapasse as bordas*/
+    box-shadow: 0 10px 20px;
+    transition: transform 0.3s ease;
+ }
+
+ .product-card img {
+    width: 80%%; /*Largura da imagem*/
+    height: 200px;/* Altura da fixa para imagem*/
+    object-fit: cover;/* cover garanteque a imagem preencha todo o espaço se ditorecer*/
+ }
+
+ /* Conteudo interno do cartão */
+ .car-content{
+    padding: 20px; /*Espaçamento interno*/
+    text-align: center;
+ }
+ h3 {
+    color: rgb(83, 83, 161);
+    font-size: 1.3rem;/*tamanho de font para mobile*/
+ }
+ p {
+    color: rgb(34, 71, 59);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 20px;/* espaçamento inferior*/
+
+ }
+ .price {
+    display: block;/* faz ocupar a linha inteira*/
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(18, 124, 71);
+    margin-bottom: 20px;
+ }
+ .buy-btn {
+    display: block;
+    background-color: rgb(98, 60, 233);
+    color: #ffff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3 ease; /* transição suave para efeitos hover*/
+ }
+  @media ()
+ 
+ 
+ 

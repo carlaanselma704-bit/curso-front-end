@@ -1,0 +1,43 @@
+
+/*Aula 01 - css Para pagina de boas vinda
+metodologia: mobile first 
+- Estilo de base são utilizado oara celulares ( viewport pequenos)
+- telas maiores recebe ajuse em qualquer dispositivo
+
+Estrutura de css
+Estilo globais (body. fonte)
+Estilos de heard ( cabeçalho)
+Estilo de header  de main (conteudo ,principal)
+
+
+
+Estilos globais  ( Base Mobile) */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*Define a familia de fontes padrão para a pagina*/
+
+    background-color: rgb(24, 44, 54); /* Define a cor de fundo da a pagina*/
+
+    color: rgb(218, 190, 154);
+    
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+}
+
+header {
+    background-color: rgb(110, 110, 185);
+    color: aliceblue;
+    padding: 30px 15px;
+}
+
+h1 {
+    font-size: 1.8rem;/* tamanho de fonte (1.8rem = 28.8px)*/
+    font-weight: 700; /* Peso da fonte ( mais grosso = mais destaques*/
+}
+
+
+
+

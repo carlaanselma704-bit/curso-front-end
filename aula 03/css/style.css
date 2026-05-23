@@ -1,0 +1,48 @@
+/* 
+Aula 03
+*/
+
+/* Estilos css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: borde-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    padding: 15px;
+    color: rgb(54, 54, 2);
+}
+/* Container */
+.recipe-container {
+    background: #ffff ;
+    padding : 20px;
+    border-radius: 15px;
+    box-shadow: 0 5 px 15px rgba(0,0,0,0.5);
+}
+h1 {
+    text-align: center;
+    color: rgb(173, 104, 19);
+    font-size: 1.5rem;
+}
+.flex-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+/* Estilo de cada intem da lista */
+.flex-list li {
+    background: #ffff;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+/*  seções */
+.info {
+    
+    overflow: auto;
+}
