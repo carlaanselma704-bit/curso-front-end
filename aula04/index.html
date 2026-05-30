@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 - forulario de incrição</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- wrapper do formulario -->
+     <!--  div container que centraliza e estiliza o foemulario -->
+    <div class="form-wrapper">
+        <!-- formulario Principal -->
+         <!-- Tag semantica que <form> indica que é im formulario-
+            Atribuitos utilizados
+         - method: como enviar os dados (get ou post)
+         - action: para one enviar os dados-->  
+
+        <form class="evnt-form">
+            <h2> Inscrição tech summit</h2>
+
+            <div class="form-group">
+
+                <label for="">Nome completo</label>
+                <!-- Inout type ( campo de texto) -->
+                 <!-- id : ondentificar unico (conecta ele com label)
+                    - type : tipo de entrada de dados (text = texto simbolico)placeholder :texto de sugestão )desaparece quando digita 
+                     - required:campo obrigatorio (não permite enviar com o campo vazio)-->
+                <input type="text" id="nome" placeholder="Nome completo">
+            </div>
+
+            <div class="forma-group">
+                <label for="email">E-Mail</label>
+                <input type="email"  id="email" placeholder="seuemail@email.com" >
+            </div>
+            <!-- Groupo 3 select (seleção) -->
+
+             <div class="form-group">
+                <label for="area"> Área de Interesse</label>
+
+                <!-- permite que o usuario escolha uma opção de uma lista pré-definida -->
+                <select id="area">
+                    <!-- Opções do dropdown -->
+                     <!-- value:valor enviado no formulario (não é o que usuario vê) -->
+                   <option value="fronend">Front-end</option> 
+                   <option value="bakend">Back-end</option>
+                   <option value="design">UI/UX Design</option>
+                </select>
+           </div>
+                <!-- grupo de textarea  -->
+
+                <div class="forma-group">
+                    <label for="msg">Por quer participar</label>
+                    <!-- textarea -->
+                     <!-- Permite entrada de texto em multiplas linhas
+                      atributo rows define a altura e a aletura da linha inicial -->
+                    <textarea  id="msg" rows="4"></textarea>
+                </div>
+                <!-- Botão de enviar -->
+                 <!-- type -"sumit " faz com que o formulario seja enviado ao clicar o envento de envio pode ser  captuyrado com javascript para validação adicional -->
+                 <button type="submit">enviar incrição</button>
+
+             </div>
+        </form>  
+      </div>
+</body>
+</html>

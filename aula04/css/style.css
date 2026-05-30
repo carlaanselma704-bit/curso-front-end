@@ -1,0 +1,65 @@
+/*
+Aula 04 - css para formulario de incrição
+1.estilização de inputs, selects e textarea
+2. layout flexbox  para groups de formulario
+3.botões interativos com hover
+4.backgrousds em gradiente 
+5.sombras de profundidade
+*/
+
+/* Estilos globais */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'inter', sans-serif;
+    background-color: rgb(206, 165, 245);
+    padding: 20px;
+    /*
+       Flexbox: centralizar o formulario
+       justifify-content: center  = centralizando horizontalmente
+       align-items : center = alinhando no topo (mobile para facilitar o scroll)
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Wrapper do formulario*/
+.form-wrapper {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+}
+
+/* titulo do formulario*/
+h2 {
+ text-align: center;
+ font-size: 1.4rem;
+ color: #333;
+}
+
+.form-group {
+    /*Organizando label sobre input*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    
+}
+label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+input, select,textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}

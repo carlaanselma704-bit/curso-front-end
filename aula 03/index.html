@@ -8,56 +8,81 @@
 </head>
 <body>
     
+     <!-- CONTAINER PRINCIPAL -->
+    <!-- Div wrapper que centraliza todo o contúdo da receita -->
     <div class="recipe-container">
+      <!-- Titulo principal -->
+      <h1>Bolo de Cenoura com Chocolate</h1>
 
-        <h1>Bolo de cenoura com Chocolate</h1>
+      <!-- SEÇÃO DE INGREDIENTES -->
+      <!-- Tag semântica <section> agrupa conteúdos tématicos relacionado 
+        -->
+      <section class="ingredients">
+        <!-- Subtitulo da secão -->
+        <h2>Ingredientes</h2>
 
-        <section class="Ingredientes">
-            <h2>Ingredientes</h2>
-            <ul class="flex-list">
-                <li>3 cenoura Medias</li>
-                <li>3 ovos</li>
-                <li>50 ml xicara de oleo</li>
-                <li>2 xicaras de Açucar</li>
-                <li>2 xicaras de farinha de trigo</li>
-                <li>1 colher de fermento</li>
-            </ul>
-        </section>
+        <!-- LISTA FLEXÍVEL DE INGREDIENTES -->
+        <!-- Utiliza CSS flexbox para mudar de layout conforme o tamanho da tela:
+            - mobile: os itens em coluna 
+            - descktop: os iten em linha 
+         -->
 
-<section class="info">
-    <h2>Informações Nutricionais</h2>
-     <!-- Tabela Responsiva -->
-      <!-- Tabela que exibir os nutrientes e quantidade
-       No css , aplica scrollhorizontal e, mobile -->
-       <table>
-        <!--  thead : Representa o cabeçalho da tabela -->
-        <thead>
-            <!-- tr cria uma linha -->
-           <tr>
-            <!-- th Celila de titulos que fica em negrito por padrão, esta definido a coluna -->
-             <th>Nutrientes</th>
-             <th>Qualidade</th>
-           </tr>
-           <!--  tbory onde fica linha -->
-           <tbody>
-            <tr>
-                <!-- TD celula de conteudo -->
-                <td>Calorias </td>
-                <td>320 kcal</td>
-            </tr>
-            <tr>
-                <td>Açúcares</td>
-                <td>25g</td>
-            </tr>
-            <tr>
-                <td>Gorduras</td>
-                <td>12g</td>
-            </tr>
-           </tbody>
-        </thead>
-       </table>
+        <!-- ul - cria listas não ordenadas -->
+        <ul class="flex-list">
+          <!-- li - cria o item da lista -->
+          <li>3 Cenouras mèdias</li>
+          <li>3 ovos</li>
+          <li>1 xíxara de Òleo</li>
+          <li>2 xícaras de Açucar</li>
+          <li>2 xícaras de Farinha</li>
+          <li>1 colher de Fermento</li>
+        </ul>
+      </section>
 
-</section>
+      <!-- SEÇÃO DE INFORMAÇÕES NUTRICIONAIS -->
+       <!-- Seção semântica para dados tabulares -->
+      <section class="info">
+        <h2>Informações Nutricionais</h2>
+
+        <!-- TABELA RESPONSIVA -->
+         <!-- Tabela  que exibe os nutrientes e quantidade 
+            No CSS, aplica scroll horizontal em mobilie se necessário 
+         -->
+        <!-- Tabela: usada para organizar dados m linhas e colunas -->
+
+        <table>
+            <!-- THEAD : representa o cabeçalho da tabela -->
+            <thead>
+                <!-- TR (table row): cria uma linha -->
+                <tr>
+                    <!-- TH (table header): célula de titulo ( fica em negrito por padrão)
+                    Definindo o nome da coluna 
+                    -->
+                    <th>Nutriente</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <!-- TBORY:  representa o corpo da tabela ( onde ficam os dados)-->
+            <tbody>
+                <!-- primeira linha -->
+                <tr>
+                    <!-- TD (table data) : célula de contéudo -->
+                    <td>Calorias</td>
+                    <td>320 kcal</td>
+                </tr>
+                <!-- Segunda linha -->
+                <tr>
+                    <td>Açúcares</td>
+                    <td>25g</td>
+                </tr>
+                <!-- terceira linha -->
+                 <tr>
+                    <td>Gorduras</td>
+                    <td>12g</td>
+                 </tr>
+            </tbody>
+        </table>
+      </section>
     </div>
-</body>
-</html>
+  </body>
+</html>7

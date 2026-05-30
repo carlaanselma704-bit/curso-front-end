@@ -1,48 +1,106 @@
 /* 
-Aula 03
+AULA 03 - CSS PARA PÁGINA DE RECEITA
+
+
+TÓPICOS PRINCIPAIS
+
+1. Estilos globais
+2. Container de receita
+3. Títulos e seções
+4. Listas flexiveis
+5. Tabelas responsivas
+6. Media Queries
 */
 
-/* Estilos css */
+/* Estilos Globais */
+
+/* Reset do css padrão do navegador */
 *{
     margin: 0;
     padding: 0;
-    box-sizing: borde-box;
+    box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: antiquewhite;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfcf0;
     padding: 15px;
-    color: rgb(54, 54, 2);
+    color: #4a3728;
 }
-/* Container */
+
+/* CONTAINER DE RECEITA */
 .recipe-container {
-    background: #ffff ;
-    padding : 20px;
+    background: #ffff;
+    padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 5 px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 15px rgba(0, 0,0, 0.05);
 }
+
+/* TÍTULOS E SEÇÕES */
+
 h1 {
-    text-align: center;
-    color: rgb(173, 104, 19);
+    text-align: center; /*Titulo centralizado*/
+    color: #d35400;
     font-size: 1.5rem;
 }
-.flex-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
+h2 {
+    margin: 25px;
 }
 
-/* Estilo de cada intem da lista */
+/* LISTAS FLEXIVEIS */
+
+.flex-list {
+    display: flex; /*ativa o modelo flexbox para esse elemento*/
+    flex-direction: column; /* alinha a direção dos itens ( coluna itens empilhados e row itens lado a lado*/
+    gap: 10px;/*Espaçamento entre itens*/
+    list-style: none; /*Remove o marcador da lista*/
+}
+/*Estilo de cada item da lista*/
 .flex-list li {
-    background: #ffff;
+    background: #fff3e0;
     padding: 12px;
     border-radius: 8px;
     text-align: center;
 }
-/*  seções */
+
+/*SEÇÔES*/
 .info {
-    
-    overflow: auto;
+    /* Se a tela ficar muito larga em mobile, permite scroll horizontal */
+    overflow-x: auto;
+}
+
+table {
+     width: 100%;  /* ocupar a largura 100% disponivel*/
+     min-width: 300px;/* largura minima*/
+     border-collapse: collapse; /* remover o espaço entre as bordas da celulas*/
+     margin-top: 20px; /* espaçamento acima da tabela*/
+}
+th, td {
+    padding: 10px; /* espaçamento interno*/
+    font-size:  0.9rem;/*tamanho da fonte em mobile*/
+    border-bottom: 1px solid #eee; /* linha divisoria entre as celulas*/
+}
+/* media query: Tablet/desktop*/
+@media (min-width:768px) {
+    .recipe-container {
+        max-width: 800px; /* maximo de largura*/
+        margin: 0 auto; /* centralizou horizontamente*/
+        padding: 40px;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    .flex-list{
+        flex-direction: row;/* esta deixando a direção em linhas*/
+        justify-content: center; /* centralizou horizontalmente os ingrediente*/
+    }
+
+    .flex-list li {
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+    th,td {
+        padding: 15px;
+        font-size: 1rem;
+    }
 }
